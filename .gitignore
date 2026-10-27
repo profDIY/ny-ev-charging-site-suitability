@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.egg-info/
+
+# Django
+webapp/db.sqlite3
+*.sqlite3
+webapp/staticfiles/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Claude Code session state (not part of the project)
+.claude/
+
+# Local scratch / working directories
+ev_work/
+
+# Legacy, unused front-end assets superseded by the inline dashboard template
+webapp/static/sites/css/dashboard.css
+webapp/static/sites/js/dashboard.js
+
+# Debug/scratch artifacts from development
+scratch_test.js
+scratch_test_sky.js
+
+# Stale duplicate template (project-level webapp/templates/sites/dashboard.html
+# is the one Django actually resolves — see TEMPLATES.DIRS in settings.py)
+webapp/sites/templates/

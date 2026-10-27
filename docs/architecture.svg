@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 1200" width="1300" height="1200">
+
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+  </marker>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f0f9ff"/>
+    <stop offset="1" stop-color="#e0f2fe"/>
+  </linearGradient>
+  <style>
+    .card { filter: drop-shadow(0 1px 2px rgba(15,23,42,0.08)); }
+  </style>
+</defs>
+
+<rect x="0" y="0" width="1300" height="1200" fill="url(#bg)"/>
+<text x="650.0" y="46" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">NY EV Charging Site Suitability — System Architecture</text>
+<text x="650.0" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">6-criteria MCDA pipeline → scored census tracts → interactive equity-focused siting dashboard</text>
+<text x="60" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#0369a1">1. EXTERNAL DATA SOURCES</text>
+<g class="card"><rect x="60.0" y="130" width="220.0" height="92" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="170.0" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">NY State Open Data</text>
+<text x="170.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">(Socrata API)</text>
+<text x="170.0" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">Designated DAC tracts</text>
+<text x="170.0" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">(2023, census-tract level)</text>
+<g class="card"><rect x="300.0" y="130" width="220.0" height="92" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="410.0" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">NY State Open Data</text>
+<text x="410.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">(Socrata API)</text>
+<text x="410.0" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">EV registrations</text>
+<text x="410.0" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">by county</text>
+<g class="card"><rect x="540.0" y="130" width="220.0" height="92" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="650.0" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">NREL AFDC API</text>
+<text x="650.0" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">Public EV charging</text>
+<text x="650.0" y="196" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">station locations</text>
+<g class="card"><rect x="780.0" y="130" width="220.0" height="92" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="890.0" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">Con Edison</text>
+<text x="890.0" y="170" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">ArcGIS Feature Service</text>
+<text x="890.0" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">EV hosting capacity</text>
+<text x="890.0" y="212" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">by feeder (MW)</text>
+<g class="card"><rect x="1020.0" y="130" width="220.0" height="92" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="1130.0" y="152" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">NYSERDA</text>
+<text x="1130.0" y="178" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">Charge Ready NY</text>
+<text x="1130.0" y="196" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">installed sites</text>
+<line x1="170.0" y1="226" x2="170.0" y2="260" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="410.0" y1="226" x2="410.0" y2="260" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="650.0" y1="226" x2="650.0" y2="260" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="890.0" y1="226" x2="890.0" y2="260" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="1130.0" y1="226" x2="1130.0" y2="260" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="60" y="286" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#0369a1">2. ORCHESTRATION &amp; ETL  —  ev_site_selection_dag.py (Airflow, weekly) / ev_pipeline.py</text>
+<g class="card"><rect x="60" y="298" width="1180" height="150" rx="18" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.6"/></g>
+<rect x="90.0" y="318" width="242.5" height="110" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="211.25" y="342" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">EXTRACT</text>
+<text x="211.25" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">(5 parallel tasks,</text>
+<text x="211.25" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">file-cache-backed)</text>
+<line x1="338.5" y1="373.0" x2="376.5" y2="373.0" stroke="#0ea5e9" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="382.5" y="318" width="242.5" height="110" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="503.75" y="342" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">TRANSFORM</text>
+<text x="503.75" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">&amp; INTEGRATE</text>
+<text x="503.75" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">(join on tract geoid)</text>
+<line x1="631.0" y1="373.0" x2="669.0" y2="373.0" stroke="#0ea5e9" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="675.0" y="318" width="242.5" height="110" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="796.25" y="342" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">SCORE</text>
+<text x="796.25" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">6-criteria weighted</text>
+<text x="796.25" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">MCDA model</text>
+<line x1="923.5" y1="373.0" x2="961.5" y2="373.0" stroke="#0ea5e9" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="967.5" y="318" width="242.5" height="110" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="1088.75" y="342" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">EXPORT</text>
+<text x="1088.75" y="360" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">ranked_site_</text>
+<text x="1088.75" y="378" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">recommendations.csv</text>
+<text x="60" y="478" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#0369a1"></text>
+<line x1="650.0" y1="452" x2="650.0" y2="486" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="470.0" y="492" width="360" height="46" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="650.0" y="521" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">data/cache/*.parquet, *.json  —  idempotent, reusable extract cache</text>
+<text x="60" y="612" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#0369a1">3. OUTPUTS &amp; PERSISTENCE</text>
+<g class="card"><rect x="60" y="624" width="684.4" height="118" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="78" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0c4a6e" text-anchor="start" opacity="1">outputs/</text>
+<text x="78" y="672" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start" opacity="1">master_integrated_dataset.{csv,parquet}  ·  ranked_site_recommendations.csv</text>
+<text x="78" y="690" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start" opacity="1">ev_site_suitability_map.html  ·  validation_report.csv  ·  run_manifest.json</text>
+<text x="78" y="708" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="start" opacity="1">technical_documentation.pdf  ·  presentation_deck_15_slides.pptx</text>
+<g class="card"><rect x="772.4" y="624" width="467.6" height="118" rx="14" fill="#ffffff" stroke="#7dd3fc" stroke-width="1.6"/></g>
+<text x="1006.2" y="650" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#0c4a6e" text-anchor="middle" opacity="1">Django ORM → SQLite</text>
+<text x="1006.2" y="672" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475569" text-anchor="middle" opacity="1">SyncRun  ·  TractScore  ·  SiteRecommendation</text>
+<text x="1006.2" y="728" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#64748b" text-anchor="middle" opacity="1">(sync_sites management command)</text>
+<line x1="650.0" y1="542" x2="650.0" y2="616" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="60" y="816" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5" fill="#0369a1">4. APPLICATION LAYER  —  Django + Django REST Framework (webapp/)</text>
+<g class="card"><rect x="60" y="828" width="1180" height="190" rx="18" fill="#f0f9ff" stroke="#38bdf8" stroke-width="1.6"/></g>
+<rect x="84" y="850" width="401.20000000000005" height="146" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="284.6" y="876" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">REST API</text>
+<text x="284.6" y="898" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">/api/sites/</text>
+<text x="284.6" y="916" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">/api/stats/</text>
+<text x="284.6" y="934" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">/api/sync/</text>
+<text x="284.6" y="952" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">/api/geocode/, /api/nearest/</text>
+<rect x="509.20000000000005" y="850" width="706.8" height="146" rx="10" fill="#ffffff" stroke="#0ea5e9" stroke-width="1.6"/>
+<text x="862.6" y="876" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#075985" text-anchor="middle" opacity="1">Dashboard UI  (Leaflet + Tailwind)</text>
+<text x="862.6" y="898" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">Suitability choropleth · DAC overlay · top-site markers</text>
+<text x="862.6" y="916" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">6-criteria MCDA sliders + scenario presets</text>
+<text x="862.6" y="934" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">Address search &amp; coverage-radius check (Photon geocoder)</text>
+<text x="862.6" y="952" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#334155" text-anchor="middle" opacity="1">Existing chargers / Charge Ready NY layers</text>
+<line x1="1006.2" y1="746" x2="1006.2" y2="820" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="402.2" y1="746" x2="402.2" y2="820" stroke="#64748b" stroke-width="2.4" stroke-dasharray="6,5" marker-end="url(#arrow)"/>
+<line x1="487.20000000000005" y1="912.0" x2="507.20000000000005" y2="912.0" stroke="#0ea5e9" stroke-width="2.4" marker-end="url(#arrow)"/>
+<line x1="650.0" y1="1022" x2="650.0" y2="1064" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<g class="card"><rect x="440.0" y="1072" width="420" height="54" rx="27" fill="#0c4a6e" stroke="#0c4a6e" stroke-width="1.6"/></g>
+<text x="650.0" y="1106" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#ffffff" text-anchor="middle" opacity="1">Planner / Policy Analyst / Grid Engineer  —  browser</text>
+<line x1="60" y1="1142" x2="1240" y2="1142" stroke="#bae6fd" stroke-width="1.5"/>
+<line x1="60" y1="1162" x2="100" y2="1162" stroke="#64748b" stroke-width="2.4" marker-end="url(#arrow)"/>
+<text x="110" y="1167" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start" opacity="1">data flow</text>
+<line x1="230" y1="1162" x2="270" y2="1162" stroke="#64748b" stroke-width="2.4" stroke-dasharray="6,5" marker-end="url(#arrow)"/>
+<text x="280" y="1167" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#475569" text-anchor="start" opacity="1">cached / pre-computed read</text>
+</svg>

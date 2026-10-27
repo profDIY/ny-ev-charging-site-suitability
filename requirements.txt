@@ -1,0 +1,28 @@
+# Core (required)
+pandas
+numpy
+requests
+folium
+branca
+matplotlib
+
+# Optional — enables parquet caching/exports (notebook falls back to CSV without it)
+pyarrow
+
+# To run the notebook:
+#   pip install -r requirements.txt
+#   jupyter notebook EV_Site_Selection_NY.ipynb
+#
+# For live data (recommended), set a free NREL key first:
+#   export NREL_API_KEY=your_key_here     # get one at https://developer.nrel.gov/signup
+# then run all cells top-to-bottom. Delete data/cache/ to force a fresh pull.
+
+# Optional — only needed to run the Airflow DAG (dags/ev_site_selection_dag.py)
+#   pip install "apache-airflow>=2.7"
+# Put ev_pipeline.py on the PYTHONPATH and drop the dag file in your dags_folder.
+
+# Optional — only needed for the end-to-end web app (webapp/) and notebook Section 14
+django
+djangorestframework
+#   cd webapp && python manage.py migrate && python manage.py sync_sites
+#   python manage.py runserver   (or just run notebook Section 14, which does all of this)

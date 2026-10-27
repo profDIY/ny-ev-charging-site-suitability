@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-07-15 11:41:25",
+  "counties": [
+    "Bronx",
+    "Kings",
+    "New York",
+    "Queens",
+    "Richmond",
+    "Westchester"
+  ],
+  "n_tracts_scored": 2325,
+  "weights": {
+    "equity_dac": 0.25,
+    "ev_demand": 0.2,
+    "traffic": 0.15,
+    "grid_capacity": 0.15,
+    "accessibility": 0.1,
+    "infra_gap": 0.15
+  },
+  "grid_mode": "live",
+  "grid_label": "Con Ed EV Load Capacity (MW, live)",
+  "coverage_radius_km": 2.0,
+  "sources": {
+    "dac": "LIVE 2e6c-s6fp",
+    "ev_registrations": "LIVE 3vp6-cxmr",
+    "stations": "SYNTHETIC",
+    "grid": "LIVE",
+    "charge_ready": "LIVE 9wxk-hakb"
+  },
+  "outputs": [
+    "master_integrated_dataset.parquet",
+    "master_integrated_dataset.csv",
+    "ranked_site_recommendations.csv",
+    "ranked_site_recommendations_DAC.csv",
+    "validation_report.csv",
+    "ev_site_suitability_map.html",
+    "sensitivity.png"
+  ]
+}
